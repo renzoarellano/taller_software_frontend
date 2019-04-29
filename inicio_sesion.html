@@ -13,71 +13,81 @@
     <script src="app/js/app.js"></script>
 </head>
 <body>
-    <header class="header-color col-xs-12 np">
+    <header id="changeHeader" class="header-color col-xs-12 np">
         <div class="container ">
-      <div class="row no-gutters">
-        <div class="col-md-12 col-lg-6 np">
-            <div class="row">
-                    <div class="col-md-4 np">
+            <div class="row no-gutters">
+                <div class="col-6 col-md-6 col-lg-6 np">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4" style="padding-right:0px;">
                             <span class="header-logo">
-                                <a href="index.html"><svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs></defs>
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="logo" transform="translate(-20.000000, -15.000000)" stroke="#FF1D47" stroke-width="3">
-                                            <g id="Marker" transform="translate(22.000000, 17.000000)">
-                                            <path d="M18,45.2332275 C30,33.8305966 36,24.7932582 36,18.1212121 C36,8.11314302 27.9411255,0 18,0 C8.0588745,0 0,8.11314302 0,18.1212121 C0,24.7932582 6,33.8305966 18,45.2332275 Z" id="Oval"></path>
-                                            <ellipse id="Oval-2" cx="18" cy="16.7272727" rx="5.53846154" ry="5.57575758"></ellipse>
+                                <a href="index.html"><svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs></defs>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="logo" transform="translate(-20.000000, -15.000000)" stroke="#FF1D47"
+                                                stroke-width="3">
+                                                <g id="Marker" transform="translate(22.000000, 17.000000)">
+                                                    <path
+                                                        d="M18,45.2332275 C30,33.8305966 36,24.7932582 36,18.1212121 C36,8.11314302 27.9411255,0 18,0 C8.0588745,0 0,8.11314302 0,18.1212121 C0,24.7932582 6,33.8305966 18,45.2332275 Z"
+                                                        id="Oval"></path>
+                                                    <ellipse id="Oval-2" cx="18" cy="16.7272727" rx="5.53846154"
+                                                        ry="5.57575758"></ellipse>
+                                                </g>
                                             </g>
                                         </g>
-                                    </g>
-                                </svg></a>
+                                    </svg></a>
                             </span>
-                            <span class="header-title">
+                            <span id="LogoChange" class="header-title">
                                 D'TodoAqui
                             </span>
                         </div>
-                        <div class="col-md-8">
+                        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-8 ">
                             <nav class="nav">
                                 <ul class="ul-spacei">
                                     <li class="nav-item">
-                                        <a href="index.html">Inicio</a> 
+                                        <a href="index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                         <a href="">Establecimientos</a> 
+                                        <a href="">Establecimientos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="">Noticias</a> 
+                                        <a href="">Noticias</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 ">
+                    <div class="d-none d-sm-none d-md-none d-lg-block  col-lg-12 np">
+                        <nav class="nav">
+                            <ul class="ul-spaced">
+                                <li>
+                                    <a class="btnFormEstablecimientos" href="form_establecimientos">
+                                        <i class="fa fa-plus"></i> Agregar Establecimiento
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="registro.html">Registrarme</a>
+                                </li>
+                                <li>
+                                    <a href="inicio_sesion.html">Inicio de Sesión</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none col-md-12 np">
+                        <button class="bte2" id="btn2">
+                            <span id="lin1" class="spn12"></span>
+                            <span id="lin2" class="spn22"></span>
+                            <span id="lin3" class="spn32"></span>
+                            <span id="lin4" class="spn42"></span>
+                            <span id="lin6" class="spn62"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-12 col-lg-6">
-     
-         <div class="col-md-12 np">
-          <nav class="nav">
-           <ul class="ul-spaced">
-               <li>
-                <a class="btnFormEstablecimientos" href="form_establecimientos">
-                    <i class="fa fa-plus"></i> Agregar Establecimiento
-                </a>
-            </li>
-            <li>
-                    <a href="registro.html">Registrarme</a>
-                </li>
-            <li>
-                <a href="inicio_sesion.html">Inicio de Sesión</a>
-            </li>
-           
-            
-          </ul>
-          </nav>
-       
-        </div>
-        </div>
-      </div>
-    </div>
     </header>
 
   <div class="col-xs-12 np posSesion">
@@ -132,7 +142,7 @@
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
-                            <label for="tab-1">Already Member?</a>
+                            <label for="tab-1">¿Ya eres miembro?</a>
                         </div>
                     </div>
                 </div>
@@ -172,5 +182,19 @@
     </div>
 
 </footer>
+
+<script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("changeHeader").className = "headercolorc";
+            document.getElementById("LogoChange").className = "header-titlechange";
+        } else {
+            document.getElementById("changeHeader").className = "header-color";
+            document.getElementById("LogoChange").className = "header-title";
+        }
+    }
+</script>
 </body>
 </html>

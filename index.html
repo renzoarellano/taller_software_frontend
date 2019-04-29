@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,110 +8,186 @@
     <title>D'TodoAqui</title>
     <link rel="stylesheet" href="app/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/fonts/stylesheet.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="app/css/style.css">
     <script src="app/js/bootstrap.min.js"></script>
     <script src="app/js/app.js"></script>
 </head>
+
 <body>
-    <header class="header-color col-xs-12 np">
+    <header id="changeHeader" class="header-color col-xs-12 np">
         <div class="container ">
-      <div class="row no-gutters">
-        <div class="col-md-12 col-lg-6 np">
-            <div class="row">
-                    <div class="col-md-4 np">
+            <div class="row no-gutters">
+                <div class="col-6 col-md-6 col-lg-6 np">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4" style="padding-right:0px;">
                             <span class="header-logo">
-                                <a href="index.html"><svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs></defs>
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="logo" transform="translate(-20.000000, -15.000000)" stroke="#FF1D47" stroke-width="3">
-                                            <g id="Marker" transform="translate(22.000000, 17.000000)">
-                                            <path d="M18,45.2332275 C30,33.8305966 36,24.7932582 36,18.1212121 C36,8.11314302 27.9411255,0 18,0 C8.0588745,0 0,8.11314302 0,18.1212121 C0,24.7932582 6,33.8305966 18,45.2332275 Z" id="Oval"></path>
-                                            <ellipse id="Oval-2" cx="18" cy="16.7272727" rx="5.53846154" ry="5.57575758"></ellipse>
+                                <a href="index.html"><svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs></defs>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="logo" transform="translate(-20.000000, -15.000000)" stroke="#FF1D47"
+                                                stroke-width="3">
+                                                <g id="Marker" transform="translate(22.000000, 17.000000)">
+                                                    <path
+                                                        d="M18,45.2332275 C30,33.8305966 36,24.7932582 36,18.1212121 C36,8.11314302 27.9411255,0 18,0 C8.0588745,0 0,8.11314302 0,18.1212121 C0,24.7932582 6,33.8305966 18,45.2332275 Z"
+                                                        id="Oval"></path>
+                                                    <ellipse id="Oval-2" cx="18" cy="16.7272727" rx="5.53846154"
+                                                        ry="5.57575758"></ellipse>
+                                                </g>
                                             </g>
                                         </g>
-                                    </g>
-                                </svg></a>
+                                    </svg></a>
                             </span>
-                            <span class="header-title">
+                            <span id="LogoChange" class="header-title">
                                 D'TodoAqui
                             </span>
                         </div>
-                        <div class="col-md-8">
+                        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-8 ">
                             <nav class="nav">
                                 <ul class="ul-spacei">
                                     <li class="nav-item">
-                                        <a href="">Inicio</a> 
+                                        <a href="index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                         <a href="">Establecimientos</a> 
+                                        <a href="">Establecimientos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="">Noticias</a> 
+                                        <a href="">Noticias</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 ">
+                    <div class="d-none d-sm-none d-md-none d-lg-block  col-lg-12 np">
+                        <nav class="nav">
+                            <ul class="ul-spaced">
+                                <li>
+                                    <a class="btnFormEstablecimientos" href="form_establecimientos">
+                                        <i class="fa fa-plus"></i> Agregar Establecimiento
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="registro.html">Registrarme</a>
+                                </li>
+                                <li>
+                                    <a href="inicio_sesion.html">Inicio de Sesión</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none col-md-12 np">
+                        <button onclick="SandwichEffect()" class="bte2" id="btn2">
+                            <span id="lin1" class="spn12"></span>
+                            <span id="lin2" class="spn22"></span>
+                            <span id="lin3" class="spn32"></span>
+                            <span id="lin4" class="spn42"></span>
+                            <span id="lin6" class="spn62"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-12 col-lg-6">
-     
-         <div class="col-md-12 np">
-          <nav class="nav">
-           <ul class="ul-spaced">
-               <li>
-                <a class="btnFormEstablecimientos" href="form_establecimientos">
-                    <i class="fa fa-plus"></i> Agregar Establecimiento
-                </a>
-            </li>
-            <li>
-                    <a href="registro.html">Registrarme</a>
-                </li>
-            <li>
-                <a href="inicio_sesion.html">Inicio de Sesión</a>
-            </li>
-           
-            
-          </ul>
-          </nav>
-       
-        </div>
-        </div>
-      </div>
-    </div>
     </header>
-<div class="col-xs-12 np backgroundNav">
-    
-</div>
-
-<footer class="col-xs-12 np backgroundFooter">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <p class="copyFooter">&copy; Derechos reservados Team 1 - D'todoAquí Project 2019</p>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-            <ul class="nav-redesFooter">
-                <li>
-                    <a class="color-IconF" href="">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="color-IconF" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="color-IconF" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>        
+    <div class="col-xs-12 np backgroundNav">
+        <div class="container">
+            <div class="col-xs-12 np buscadorInicio">
+                <h1 class="tituloSection1 text-center">
+                    Encuentra todo cerca a ti
+                </h1>
             </div>
         </div>
     </div>
 
-</footer>
+    <footer class="col-xs-12 np backgroundFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <p class="copyFooter">&copy; Derechos reservados Team 1 - D'todoAquí Project 2019</p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="nav-redesFooter">
+                        <li>
+                            <a class="color-IconF" href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="color-IconF" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="color-IconF" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("changeHeader").className = "headercolorc";
+                document.getElementById("LogoChange").className = "header-titlechange";
+            } else {
+                document.getElementById("changeHeader").className = "header-color";
+                document.getElementById("LogoChange").className = "header-title";
+            }
+        }
+
+        /*Efecto del Nav Movil en forma de Sandwich*/
+        var contador = 0;
+        var spn12 = document.getElementById('lin1');
+        var spn22 = document.getElementById('lin2');
+        var spn32 = document.getElementById('lin3');
+        var spn42 = document.getElementById('lin4');
+        var spn62 = document.getElementById('lin6');
+        var bte2 = document.getElementById('btn2');
+        function SandwichEffect() {
+            contador++;
+            if(contador == 1){
+                spn22.style.opacity = "0";
+                spn22.style.backgrounColor = 'transparent';
+                spn12.style.opacity = '0';
+                spn12.style.bottom = '-10px';
+                spn12.style.transform = 'rotate(45deg)';
+                spn32.style.opacity = '0';
+                spn32.style.top = '-10px';
+                spn32.style.transform = 'rotate(-45deg)';
+                spn42.style.opacity = '1';
+                spn62.style.opacity = '1';
+                bte2.style.zIndex  = '99999';    
+                bte2.style.position = 'relative';  
+            }else if(contador == 2){
+                spn12.style.opacity = '1';
+                spn12.style.bottom = '0px';
+                spn12.style.transform = 'rotate(0deg)';
+                spn22.style.opacity = '1';
+                spn22.style.backgrounColor = 'white';
+                spn32.style.opacity = '1';
+                spn32.style.top = '0px';
+                spn32.style.transform = 'rotate(0deg)';
+                spn42.style.opacity = '0';
+                spn62.style.opacity = '0';
+                bte2.style.zIndex  = '9';    
+                bte2.style.position = 'relative';  
+                contador = 0;
+            
+        }
+    }
+
+    </script>
 </body>
+
 </html>
