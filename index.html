@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header id="changeHeader" class="header-color col-xs-12 np">
+    <header id="changeHeader" class="header-color col-12 np">
         <div class="container ">
             <div class="row no-gutters">
                 <div class="col-6 col-md-6 col-lg-6 np">
@@ -66,7 +66,7 @@
                         <nav class="nav">
                             <ul class="ul-spaced">
                                 <li>
-                                    <a class="btnFormEstablecimientos" href="form_establecimientos">
+                                    <a class="btnFormEstablecimientos" href="#">
                                         <i class="fa fa-plus"></i> Agregar Establecimiento
                                     </a>
                                 </li>
@@ -89,26 +89,230 @@
                         </button>
                     </div>
                 </div>
+
             </div>
+        </div>
+        <div id="subheader" class="d-block d-sm-block d-md-block d-lg-none d-xl-none col-md-12">
+            <ul class="subnav-mobile">
+                <li>
+                    <a class="btnFormEstablecimientos" href="">
+                        <i class="fa fa-plus"></i> Agregar Establecimiento
+                    </a>
+                </li>
+                <li>
+                    <a href="registro.html">Registrarme</a>
+                </li>
+                <li>
+                    <a href="inicio_sesion.html">Inicio de Sesión</a>
+                </li>
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Establecimientos</a>
+                </li>
+                <li>
+                    <a href="">Noticias</a>
+                </li>
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+            </ul>
         </div>
     </header>
-    <div class="col-xs-12 np backgroundNav">
-        <div class="container">
-            <div class="col-xs-12 np buscadorInicio">
-                <h1 class="tituloSection1 text-center">
-                    Encuentra todo cerca a ti
-                </h1>
+    <section class="primeraSection">
+        <div class="col-12 np backgroundNav">
+            <div class="container">
+                <div class="col-12 np buscadorInicio">
+                    <h1 class="tituloSection1 text-center">
+                        Encuentra todo cerca a ti
+                    </h1>
+                    <h5 class="tituloSection2 text-center">
+                        Los mejores establecimientos en un solo lugar
+                    </h5>
+                </div>
+                <div class="col-12 np formPosition">
+                    <form class="busquedaForm" method="POST" action="index.html">
+                        <div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" autocomplete="off" placeholder="Palabra clave">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" autocomplete="off"
+                                    placeholder="Ingrese su zona">
+                            </div>
+                            <div class="form-group">
+                                <select name="categoria" id="categoriaBusqueda" class="form-control option-style"
+                                    tabindex="-98">
+                                    <option class="color-selected" value="0" selected disabled>Todas las categorías
+                                    </option>
+                                    <option class="color-selected" value="prueba 1"> Prueba 1</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-control">
+                                <button type="submit" id="busquedaForm" class="btn-busquedaForm">
+                                    BUSCAR LOCALES
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer class="col-xs-12 np backgroundFooter">
+    <section class="segundaSection">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xl-12 np titleEstablecimientos">
+                    <h1>
+                        Encuentra el mejor negocio en tu ciudad
+                    </h1>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-3 text-center padCategoria">
+                    <a href="">
+                    <div class="col-12 np">
+                    
+                        <img class="" src="app/img/hotel.png" alt="">
+                    
+                    </div>
+                    <div class="col-12 np postitleCategoria">
+                        <h6>
+                            Hoteles
+                        </h6>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-3 text-center padCategoria">
+                    <a href="">
+                    <div class="col-12 np">
+                    
+                        <img src="app/img/food-truck.png" alt="">
+                    
+                    </div>
+                    <div class="col-12 np postitleCategoria">
+                        <h6>
+                            Comida Rápida
+                        </h6>
+                    </div>
+                    </a>
+                </div> 
+                <div class="col-6 col-md-4 col-lg-3 col-xl-3 text-center padCategoria">
+                    <a href="">
+                    <div class="col-12 np">
+                    
+                        <img src="app/img/restaurant.png" alt="">
+                    
+                    </div>
+                    <div class="col-12 np postitleCategoria">
+                        <h6>
+                            Restaurantes
+                        </h6>
+                    </div>
+                    </a>    
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-3 text-center padCategoria">
+                    <a href="">
+                    <div class="col-12 np">
+                    
+                        <img src="app/img/gym.png" alt="">
+                    
+                    </div>
+                    <div class="col-12 np postitleCategoria">
+                        <h6>
+                            Gimnasios
+                        </h6>
+                    </div>
+                    </a>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="terceraSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 np titleEstablecimientos">
+                    <h1>
+                        Establecimientos Destacados
+                    </h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pad-establecimiento">
+                    <div class="col-12 np">
+                        <a href="#"><img class="img-responsive" src="app/img/establishment.jpg" alt="Establecimiento ejemplo 2"></a>
+                    </div>
+                    <div class="col-12 titleEstablecimiento">
+                        <h4>
+                            <a href="#">Ejemplo Establecimiento 1</a>
+                        </h4>
+                    </div>
+                    <div class="col-12  direccionEstablecimiento">
+                        <h6>
+                             Av. Es un ejemplo 265 Jr.
+                        </h6>
+                    </div>
+                    <div class="col ratingEstablecimiento">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div> 
+                    <div class="col opinionesEstablecimiento">
+                        <p>
+                            <span>4545</span> Opiniones
+                        </p>
+                    </div> 
+                    <div class="col-12 keywordEstablecimiento">
+                        <a href="#">Keyword1</a>,
+                        <a href="#">Keyword2</a>,
+                        <a href="#">Keyword3</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pad-establecimiento">
+                    <div class="col-12 np">
+                        <a href="#"><img class="img-responsive" src="app/img/establishment2.jpg" alt="Establecimiento ejemplo 2"></a>
+                    </div>
+                    <div class="col-12 titleEstablecimiento">
+                        <h4>
+                            <a href="#">Ejemplo Establecimiento 2</a>
+                        </h4>
+                    </div>
+                    <div class="col-12  direccionEstablecimiento">
+                        <h6>
+                             Av. Es un ejemplo 265 Jr.
+                        </h6>
+                    </div>
+                    <div class="col ratingEstablecimiento">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div> 
+                    <div class="col opinionesEstablecimiento">
+                        <p>
+                            <span>4545</span> Opiniones
+                        </p>
+                    </div> 
+                    <div class="col-12 keywordEstablecimiento">
+                        <a href="#">Keyword1</a>,
+                        <a href="#">Keyword2</a>,
+                        <a href="#">Keyword3</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="col-12 np backgroundFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
                     <p class="copyFooter">&copy; Derechos reservados Team 1 - D'todoAquí Project 2019</p>
                 </div>
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                     <ul class="nav-redesFooter">
                         <li>
                             <a class="color-IconF" href="">
@@ -154,9 +358,10 @@
         var spn42 = document.getElementById('lin4');
         var spn62 = document.getElementById('lin6');
         var bte2 = document.getElementById('btn2');
+        var subheader = document.getElementById('subheader');
         function SandwichEffect() {
             contador++;
-            if(contador == 1){
+            if (contador == 1) {
                 spn22.style.opacity = "0";
                 spn22.style.backgrounColor = 'transparent';
                 spn12.style.opacity = '0';
@@ -167,9 +372,10 @@
                 spn32.style.transform = 'rotate(-45deg)';
                 spn42.style.opacity = '1';
                 spn62.style.opacity = '1';
-                bte2.style.zIndex  = '99999';    
-                bte2.style.position = 'relative';  
-            }else if(contador == 2){
+                bte2.style.zIndex = '99999';
+                bte2.style.position = 'relative';
+                subheader.style.marginLeft = '0px';
+            } else if (contador == 2) {
                 spn12.style.opacity = '1';
                 spn12.style.bottom = '0px';
                 spn12.style.transform = 'rotate(0deg)';
@@ -180,12 +386,13 @@
                 spn32.style.transform = 'rotate(0deg)';
                 spn42.style.opacity = '0';
                 spn62.style.opacity = '0';
-                bte2.style.zIndex  = '9';    
-                bte2.style.position = 'relative';  
+                bte2.style.zIndex = '9';
+                bte2.style.position = 'relative';
+                subheader.style.marginLeft = '6000px';
                 contador = 0;
-            
+
+            }
         }
-    }
 
     </script>
 </body>
